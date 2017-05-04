@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1414701321523260}
+  m_IsPrefabParent: 1
+--- !u!1 &1414701321523260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4147331833152120}
+  - component: {fileID: 114145268489955276}
+  - component: {fileID: 61030043406834174}
+  - component: {fileID: 114217867278238046}
+  m_Layer: 0
+  m_Name: GoDestroying
+  m_TagString: Finish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4147331833152120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414701321523260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61030043406834174
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414701321523260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 3}
+  m_EdgeRadius: 0
+--- !u!114 &114145268489955276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414701321523260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210f8c750e02ee04e98a0b1a10281626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: Player
+  shakecamera: {fileID: 1168102362743774, guid: fb2a02f9bea24684aa0522ac7b554aa7,
+    type: 2}
+  cam: {fileID: 0}
+  menu: {fileID: 0}
+  tempoParaExplodir: 12
+  explosoes:
+  - {fileID: 100006, guid: e076683e0305e35498b8e8834978c0fa, type: 2}
+  - {fileID: 100008, guid: 875c9bcb71a8d7f46a64a8a7df5987e0, type: 2}
+  - {fileID: 100008, guid: 337943813ac55274db17d9c4dfcaf5ea, type: 2}
+  BOMBATEMPORARIA: {fileID: 1593479028542998, guid: 2a670c69aa9a6834fad9d476f59e7085,
+    type: 2}
+--- !u!114 &114217867278238046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414701321523260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efcbf0867fe2a543a5863f394ce9efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total: 7
+  BOMBATEMPORARIA: {fileID: 1593479028542998, guid: 2a670c69aa9a6834fad9d476f59e7085,
+    type: 2}
